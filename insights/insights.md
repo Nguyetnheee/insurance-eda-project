@@ -47,3 +47,14 @@ Even distribution across vehicle age groups → segmentation possible without bi
 ![Response vs Age](../plots/age_response_scatter.jpg)
 
 No strong linear pattern → age is not the primary driver of purchase interest.
+
+## 7. Summary of key findings
+- The dataset is balanced across major categorical variables -> reliable for analysis.
+
+- Interest rate (49.6%) indicates strong market potential.
+
+- Vehicle damage emerges as a strong predictor of interest.
+
+- Customer base is diverse in age, with the majority concentrated in 30 - 60.
+
+- No skewness in categorical variables -> great for modeling and segmentation.
