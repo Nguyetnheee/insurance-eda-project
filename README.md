@@ -68,7 +68,7 @@ Generates histograms, barplots, scatterplots, and saves them in `/plots/`.
 Group-by segmentation analysis used to compute deeper insights.  
 [View file](code/eda_insights.R)
 
-## 6. Visualizations (sample)
+## 6. Visualizations
 
 ### Age Distribution  
 ![Age Histogram](plots/age_historgram.jpg)
