@@ -1,4 +1,4 @@
-# Insight Report
+# Insights Report
 
 ## 1. Data Overview 
 Source: `load_data.R`
