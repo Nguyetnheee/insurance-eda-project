@@ -71,13 +71,13 @@ Group-by segmentation analysis used to compute deeper insights.
 ## 6. Visualizations (sample)
 
 ### Age Distribution  
-![Age Histogram](../plots/age_histogram.jpg)
+![Age Histogram](plots/age_histogram.jpg)
 
 ### Vehicle Age Distribution  
-![Vehicle Age Distribution](../plots/vehicle_age_barplot.jpg)
+![Vehicle Age Distribution](plots/vehicle_age_barplot.jpg)
 
 ### Response vs Age  
-![Response vs Age](plots/response_age_scatter.jpg)
+![Response vs Age](response_age_scatter.jpg)
 
 ## 7. Purpose of This Project
 
