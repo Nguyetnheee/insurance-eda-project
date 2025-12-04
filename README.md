@@ -1,54 +1,101 @@
-# Insurance Customer EDA Project
+# Insurance Customer EDA (R Project)
 
-This project analyzes an insurance customer dataset using R.  
-It includes data exploration, visualization, summary statistics, and insights relevant for understanding customer behavior and insurance interest.
+## 1. Quick Access
+**Read the full Insights Report here:**  **[insights.md](insights/insights.md)**  
+_(This file summarizes all findings.)_
+
+## 2. Project Overview
+This project performs an Exploratory Data Analysis (EDA) on a real insurance customer dataset (1,000 rows).  
+The goal is to:
+
+- Understand customer demographics and behavior  
+- Identify potential predictors of insurance interest  
+- Visualize key patterns  
+- Generate actionable business insights for insurance distribution  
+
+Tools used: **R, dplyr, ggplot2, tidyverse**
+
+Dataset: `train.csv` from Kaggle (Health Insurance Cross Sell Prediction)
+
+## 3. Key Findings (Summary)
+
+- Nearly half of customers (**49.6%**) show interest in buying insurance  
+- Customers with **vehicle damage** are much more likely to be interested  
+- Age distribution centers around **30–60**, the most active insurance segment  
+- Gender and vehicle age are **well-balanced**, suitable for comparative analysis  
+- Dataset is clean and reliable (no extreme imbalance across categories)
+
+**Detailed explanations, visuals, and data-driven reasoning are in** 
+→  **[insights.md](insights/insights.md)**
+
+## 4. Files in Project
+### **Data**
+- `data/train.csv` – raw insurance dataset.
+
+### **Code**
+- `code/load_data.R` - loads dataset and prints structure & data types.  
+- `code/eda_summary.R` - summary statistics, distributions, response rate.  
+- `code/eda_visualization.R` - histograms, bar charts, scatterplots (all saved in `/plots`).  
+- `code/eda_insights.R` - segmentation analysis using group_by(), summarise().
+
+### **Visualizations**
+- `plots/age_histogram.jpg`  
+- `plots/vehicle_age_barplot.jpg`  
+- `plots/age_response_scatter.jpg`  
+
+### **Insights**
+- `insights/insights.md` - comprehensive findings, each section linked to source code.
+
+### **Documentation**
+- `README.md` – project overview (this file)
 
 
-## Project Overview
+## 5. Code Files
 
-- **Goal:** Explore customer patterns and risk factors
-- **Tools:** R, dplyr, base plotting
-- **Dataset size:** 1,000 customer records
-- **Main tasks:**
-  - Summary statistics
-  - Histograms, boxplots, scatterplots
-  - Filtering and indexing analysis
-  - Business insights
+### **1. load_data.R**  
+Loads dataset and outputs structure + data types.  
+[View file](code/load_data.R)
+
+### **2. eda_summary.R**  
+Computes summary statistics, distributions, response rate, categorical breakdowns.  
+[View file](code/eda_summary.R)
+
+### **3. eda_visualization.R**  
+Generates histograms, barplots, scatterplots, and saves them in `/plots/`.  
+[View file](code/eda_visualization.R)
+
+### **4. eda_insights.R**  
+Group-by segmentation analysis used to compute deeper insights.  
+[View file](code/eda_insights.R)
+
+## 6. Visualizations (sample)
+
+### Age Distribution  
+![Age Histogram](../plots/age_histogram.jpg)
+
+### Vehicle Age Distribution  
+![Vehicle Age Distribution](../plots/vehicle_age_barplot.jpg)
+
+### Response vs Age  
+![Response vs Age](plots/response_age_scatter.jpg)
+
+## 7. Purpose of This Project
+
+This project was completed as part of my preparation for a **Data Analyst Internship**.  
+It demonstrates:
+
+- Practical R programming  
+- Ability to explore datasets independently  
+- Competence extracting insights from real data  
+- Visualization & statistical reasoning  
+- Business-oriented interpretation  
+
+## 8. Contact
+
+If you would like to know more about this project or my other work:
+
+**Trần Hoàng Nguyệt Nhi**  
+Email: thnn16102005@gmail.com  
+GitHub: https://github.com/Nguyetnheee
 
 
-## Files in this Repository
-
-- `train.csv` – insurance customer dataset  
-- `Insurance_EDA_NhiTran.R` – full R script for the analysis  
-- `scatter_murder_population.png` – scatterplot example  
-- `hist_murder_rate.png` – histogram of murder rate  
-- `boxplot_murder_rate.png` – boxplot of murder rate  
-- `insights.md` (or `.txt`) – written insights and conclusions  
-
-
-## Key Findings (Summary)
-
-1. Murder rate distribution is strongly right-skewed.
-2. Most states have a murder rate below 4 per 100,000.
-3. A few states act as high outliers and pull up the national average.
-4. Population size is positively correlated with total murders.
-5. The customer base is mostly middle-aged with moderate vintage.
-6. Around half of customers show interest in insurance.
-7. Customers with previous vehicle damage behave differently from those without.
-8. Some customer segments appear more likely to purchase insurance.
-
-
-
-## Author
-
-**Trần Hoàng Nguyệt Nhi**
-- GitHub: https://github.com/Nguyetnheee
-
-
-
-## How to Run
-
-1. Download `train.csv` and `Insurance_EDA_NhiTran.R`.
-2. Open the R script in RStudio.
-3. Set the working directory to the folder containing both files.
-4. Run the script to reproduce the analysis and plots.
